@@ -1,0 +1,24 @@
+<div class="new-post">
+  <input type="text" placeholder="Birşeyler yaz" #postText>
+  <div class="align-right new-post-buttons">
+    <a href="javascript:" class="btn btn-gray">İptal</a>
+    <a href="javascript:" class="btn btn-default" (click)="Create(postText)">Gönder</a>
+  </div>
+</div>
+<div class="box bordered" *ngFor="let post of posts" >
+  <div class="card">
+      <h2>@basarsen</h2>
+      <span class="date"> {{post.createdAt | date}} </span>
+      <p>
+          {{post.body}}
+      </p>
+      <div class="card-actions">
+          <a [routerLink]="['/detail',post.id]">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Güncelle
+          </a>
+          <a href="javascript:" (click)="Remove(post.id,post)">
+              <i class="fa fa-trash-o" aria-hidden="true"></i> Sil
+          </a>
+      </div>
+  </div>
+</div>

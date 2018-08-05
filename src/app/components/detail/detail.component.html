@@ -1,0 +1,7 @@
+<div class="new-post" *ngIf="post">
+  <input type="text" placeholder="Birşeyler yaz"  [(ngModel)]="post.body" #body>
+  <div class="align-right new-post-buttons">
+    <a href="javascript:" class="btn btn-gray">İptal</a>
+    <a href="javascript:" class="btn btn-default" (click)="Update(post.id,body)" >Güncelle</a>
+  </div>
+</div>

@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700&subset=latin-ext');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    body {
+        padding: 46px 8px 8px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .login-box input {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #03a9f4;
+        border-bottom: 1px solid #ddd;
+        z-index: 2;
+        line-height: 40px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    header a {
+        font-weight: normal;
+        font-size: 12px;
+        padding: 4px 12px!important;
+        border-radius: 5px;
+        margin-right: 4px;
+    }
+
+    .box {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .box.bordered {
+        border: 1px solid #efefef;
+    }
+
+    .btn {
+        padding: 16px 24px;
+    }
+
+    .btn.btn-block {
+        display: block;
+        text-align: center;
+    }
+
+    .btn.btn-default {
+        background-color: #03a9f4;
+        color: #fff;
+    }
+
+    .btn.btn-blank {
+        border: 1px solid #fff;
+    }
+
+    input,
+    select {
+        border: 1px solid #efefef;
+        display: block;
+        outline: none;
+        padding: 16px 8px;
+        width: 100%;
+        font-size: 14px;
+        color: #444444;
+        -webkit-appearance: none;
+        border-radius: 0;
+        background: none;
+    }
+
+    input:focus {
+        border-color: #bbb;
+    }
+
+    input:disabled,
+    select:disabled {
+        background-color: #fafafa;
+    }
+
+    h1 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .card {
+        position: relative;
+        padding: 8px;
+    }
+
+    .card h2 {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .card .date {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        color: #999;
+    }
+
+    .card p {
+        margin: 16px 0;
+        line-height: 16px;
+    }
+
+    .card .card-actions {
+        padding: 16px 0 8px;
+        border-top: 1px solid #ddd;
+    }
+
+    .card .card-actions a {
+        font-size: 12px;
+    }
+
+    .card .card-actions a:first-child {
+        margin-right: 16px;
+    }
